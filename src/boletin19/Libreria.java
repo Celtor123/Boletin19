@@ -28,11 +28,11 @@ public class Libreria {
     System.out.println(lista);
     }
     public void darBaixa(){
-        for(){
-        if(lista.contains(titulo=null)){
-            lista.remove)
-        }
-        }
+//        for(){
+//        if(lista.contains(titulo=null)){
+//            lista.remove)
+//        }
+//        }
     }
     
        
