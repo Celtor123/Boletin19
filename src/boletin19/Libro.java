@@ -1,9 +1,7 @@
 
 package boletin19;
 
-import java.util.ArrayList;
-
-public class Libro {
+public class Libro  implements Comparable<Libro>{
      
     private String titulo,autor,ISBN;
     private int noUnidade;
@@ -13,7 +11,7 @@ public class Libro {
     }
 
     public Libro(String titulo, String autor, String ISBN, int noUnidade, float prezo) {
-        ArrayList<Libro> lista = new ArrayList<Libro>();
+      
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
@@ -61,6 +59,16 @@ public class Libro {
 
     public void setPrezo(float prezo) {
         this.prezo = prezo;
+    }
+
+    @Override
+    public String toString() {
+        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", ISBN=" + ISBN + ", noUnidade=" + noUnidade + ", prezo=" + prezo + '}';
+    }
+
+    @Override
+    public int compareTo(Libro t) {
+       return titulo.compareTo(t.getTitulo());
     }
     
     
