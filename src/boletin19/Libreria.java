@@ -33,10 +33,11 @@ public class Libreria{
     public void venderLibros(){
         String w=JOptionPane.showInputDialog("Poña o numero do libro que quere eliminar");
         int r=Integer.parseInt(w);
-        lista.clear();
+        Iterator p=lista.iterator();
+        p.remove();
     }
     public void amosarLibros(){
-        Collections.sort(lista);
+        
         for(Libro a:lista){
     System.out.println(a);
         }
